@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+double square(double length) {
+    return length * length;
+}
+double cube(double length) {
+    return length * length * length;
+}
+
+int main() {
+    double length;
+
+    std::cout << "Enter the length of the side: ";
+    std::cin >> length;
+
+    double area = square(length);
+    double volume = cube(length);
+
+    std::cout << "Area: " << area << "cm^2\n";
+    std::cout << "Volume: " << volume << "cm^2\n";
+
+    return 0;
+}
